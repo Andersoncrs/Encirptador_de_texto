@@ -1,5 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
   --color-background: #F3F5FC;
+  --color-secondary-background: #FFFFFF;
+  --color-primary: #0A3871;
+  --color-secondary: #495057;
+  --color-gray: #D8DFE8;
+}
+
+* {
+  background-color: var(--color-background);
+  font-family: "Inter", sans-serif;
+  font-size: calc(62.5% + 0.5vw);
+}
+
+.header__logo {
+  margin: 3% 0% 3% 2%;
+  width: 8%;
+}
+
+.main {
+  display: flex;
+  margin: 0% 12%;
+  justify-content: flex-start;
+  gap: 10%;
+  align-items: flex-start;
+}
+
+.input-text__textarea {
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  background-color: var(--color-background);
+}
+.input-text__textarea::placeholder {
+  color: var(--color-primary);
+}
+.input-text__textarea:focus {
+  outline: none;
+}
+.input-text__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  gap: 2%;
+}
+.input-text__button {
+  width: 100%;
+  height: 4rem;
+  margin: 1% 2%;
+  font-size: 1rem;
+  border: 0px solid var(--color-primary);
+  border-radius: 24px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary-background);
+  cursor: pointer;
+}
+.input-text__button:hover {
+  background-color: var(--color-secondary);
+}
+
+.output-text__textarea {
+  width: 100%;
+  font-size: 1.5rem;
+  border: 20px solid var(--color-secondary-background);
+  border-radius: 24px;
+  background-color: var(--color-secondary-background);
+  background-image: url("/assets/Muneco.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 80%;
+}
+.output-text__textarea::placeholder {
+  color: var(--color-primary);
+}
+.output-text__textarea:focus {
+  outline: none;
+}
+.output-text__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  gap: 2%;
+}
+.output-text__button {
+  width: 100%;
+  height: 2rem;
+  margin: 1% 2%;
+  font-size: 1rem;
+  border: 0px solid var(--color-primary);
+  border-radius: 24px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary-background);
+  cursor: pointer;
+}
+.output-text__button:hover {
+  background-color: var(--color-secondary);
 }
 
 /*# sourceMappingURL=style.css.map */

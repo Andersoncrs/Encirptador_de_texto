@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Encriptador</title>
 </head>
 <body>
     <header class="header">
-        <img src="assets/logo.png" alt="Logo Alura" class="header__logo">
+        <img class="header__logo" src="assets/logo.png" alt="Logo Alura">
     </header>
     <main class="main">
         <section class="input-text">
-            <textarea class="input-text__textarea" cols= "30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea class="input-text__textarea" cols= "40" rows="10" placeholder="Ingrese el texto aquí"></textarea>
             <div>
                 <h6 class = "input-text__rules">Solo letras minúsculas y sin acentos</h6>
             </div>
@@ -21,7 +23,7 @@
             </div>
         </section>
         <section class="output-text">
-            <textarea class="output-text__textarea" cols= "20" rows="10" placeholder="Texto encriptado"></textarea>
+            <textarea class="output-text__textarea" cols= "25" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
             <div class="output-text__buttons">
                 <button class="output-text__button output-text__button--copy">Copiar</button>
                 <button class="output-text__button output-text__button--clean">Limpiar</button>
